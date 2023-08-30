@@ -1,18 +1,8 @@
-h1 {
-    background-color: black;
-    
-
-}
 
 h2 {
-    color: red;
-    text-decoration: underline;
-}
-
-h2:hover {
-    color: orange;
+    color: rgb(99, 14, 168);
 }
 
 .regioes {
-    width: 10%;
+    padding: 900px;
 }
