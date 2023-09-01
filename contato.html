@@ -1,14 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BraVias - Contato</title>
-    <link rel="shortcut icon" type="imagex/png" href="img/icone3.ico" >
+    <link rel="shortcut icon" type="imagex/png" href="img/icone3.ico">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <header>
-        <h1><img src="img/logo-header.png" alt="Logo Bravias Cabeçario" width="20%"></h1>
+        <a href="index.html">
+            <h1><img src="img/logo-header.png" alt="Logo Bravias Cabeçario" width="20%"></h1>
+        </a>
 
         <nav>
             <ul>
@@ -23,78 +28,80 @@
 
     <main>
         <hr width="90%">
-       <form>
-        <label for="nomesobrenome">Nome e Sobrenome:</label>
-        <input type="text" id="nomesobrenome" class="input-padrao" name="nomesobrenome" required>
-        <br>
-        <label for="email">Email:</label>
-        <input type="email" id="email" class="input-padrao" name="email" required placeholder="seuemail@dominio.com">
-        <br>
-        <label for="telefone">Telefone:</label>
-        <input type="tel" id="telefone" class="input-padrao" name="telefone" required placeholder="(XX) XXXXX-XXXX">
-        <br>
-        <label for="idade">Idade:</label>
-        <input type="number" id="idade" class="input-padrao" name="idade" required>
-        <br>
-        <label for="sexo">Sexo:</label>
-        <select name="sexo" required>
-            <option value="">Escolha</option>
-            <option value="Valor 1">Masculino</option>
-            <option value="Valor 2">Feminino</option>
-        </select>
-        <br>
-        <label for="habilitacao">Habilitação:</label>
-        <select name="habilitacao" id="habilitacao" required>
-            <option value="">Escolha</option>
-            <option value="Valor 1">A</option>
-            <option value="Valor 2">B</option>
-            <option value="Valor 3">A/B</option>
-            <option value="Valor 4">C</option>
-            <option value="Valor 5">D</option>
-            <option value="Valor 6">E</option>
-        </select>
-        <br>
-        <label for="estado">Estado:</label>
-        <select name="estado" id="estado" required>
-            <option value="">Escolha</option>
-            <option value="Valor 1">AC</option>
-            <option value="Valor 2">AL</option>
-            <option value="Valor 3">AP</option>
-            <option value="Valor 4">AM</option>
-            <option value="Valor 5">BA</option>
-            <option value="Valor 6">CE</option>
-            <option value="Valor 7">DF</option>
-            <option value="Valor 8">ES</option>
-            <option value="Valor 9">GO</option>
-            <option value="Valor 10">MA</option>
-            <option value="Valor 11">MT</option>
-            <option value="Valor 12">MS</option>
-            <option value="Valor 13">MG</option>
-            <option value="Valor 14">PA</option>
-            <option value="Valor 15">PB</option>
-            <option value="Valor 16">PR</option>
-            <option value="Valor 17">PE</option>
-            <option value="Valor 18">PI</option>
-            <option value="Valor 19">RJ</option>
-            <option value="Valor 20">RN</option>
-            <option value="Valor 21">RS</option>
-            <option value="Valor 22">RO</option>
-            <option value="Valor 23">RR</option>
-            <option value="Valor 24">SC</option>
-            <option value="Valor 25">SP</option>
-            <option value="Valor 26">SE</option>
-            <option value="Valor 27">TO</option>
-        </select>
-        <br>
-        <label for="mensagem">Mensagem:</label>
-        <textarea cols="70" rows="10" id="mensagem" required></textarea>
-        <br>
-        <label class="checkbox"></label><input type="checkbox" checked>Concorda com nossa política de privacidade?</label>
-        <br>
-        <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nosssa Newslatter?</label>
-        <br>
-        <input type="submit" value="Enviar" class="enviar">    
-      </form>
+        <form>
+            <label for="nomesobrenome">Nome e Sobrenome:</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" name="nomesobrenome" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" class="input-padrao" name="email" required
+                placeholder="seuemail@dominio.com">
+            <br>
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" class="input-padrao" name="telefone" required placeholder="(XX) XXXXX-XXXX">
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" class="input-padrao" name="idade" required>
+            <br>
+            <label for="sexo">Sexo:</label>
+            <select name="sexo" required>
+                <option value="">Escolha</option>
+                <option value="Valor 1">Masculino</option>
+                <option value="Valor 2">Feminino</option>
+            </select>
+            <br>
+            <label for="habilitacao">Habilitação:</label>
+            <select name="habilitacao" id="habilitacao" required>
+                <option value="">Escolha</option>
+                <option value="Valor 1">A</option>
+                <option value="Valor 2">B</option>
+                <option value="Valor 3">A/B</option>
+                <option value="Valor 4">C</option>
+                <option value="Valor 5">D</option>
+                <option value="Valor 6">E</option>
+            </select>
+            <br>
+            <label for="estado">Estado:</label>
+            <select name="estado" id="estado" required>
+                <option value="">Escolha</option>
+                <option value="Valor 1">AC</option>
+                <option value="Valor 2">AL</option>
+                <option value="Valor 3">AP</option>
+                <option value="Valor 4">AM</option>
+                <option value="Valor 5">BA</option>
+                <option value="Valor 6">CE</option>
+                <option value="Valor 7">DF</option>
+                <option value="Valor 8">ES</option>
+                <option value="Valor 9">GO</option>
+                <option value="Valor 10">MA</option>
+                <option value="Valor 11">MT</option>
+                <option value="Valor 12">MS</option>
+                <option value="Valor 13">MG</option>
+                <option value="Valor 14">PA</option>
+                <option value="Valor 15">PB</option>
+                <option value="Valor 16">PR</option>
+                <option value="Valor 17">PE</option>
+                <option value="Valor 18">PI</option>
+                <option value="Valor 19">RJ</option>
+                <option value="Valor 20">RN</option>
+                <option value="Valor 21">RS</option>
+                <option value="Valor 22">RO</option>
+                <option value="Valor 23">RR</option>
+                <option value="Valor 24">SC</option>
+                <option value="Valor 25">SP</option>
+                <option value="Valor 26">SE</option>
+                <option value="Valor 27">TO</option>
+            </select>
+            <br>
+            <label for="mensagem">Mensagem:</label>
+            <textarea cols="70" rows="10" id="mensagem" required></textarea>
+            <br>
+            <label class="checkbox"></label><input type="checkbox" checked>Concorda com nossa política de
+            privacidade?</label>
+            <br>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nosssa Newslatter?</label>
+            <br>
+            <input type="submit" value="Enviar" class="enviar">
+        </form>
     </main>
 
 
@@ -113,6 +120,7 @@
             </nav>
         </section>
     </footer>
-    
+
 </body>
+
 </html>

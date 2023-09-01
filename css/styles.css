@@ -1,0 +1,54 @@
+/*Reset do parâmetros da página
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root {
+    font-size: 62.5%;
+    --nav-bg-color: #121212;
+    --nav-text-color: white;
+    --button-bg-color: #0052CE;
+    --button-text-color: white;
+  }
+  
+  body {
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  .button {
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    padding: 1rem 1.6rem;
+  
+    background: var(--button-bg-color);
+    border-radius: .8rem;
+  
+    color: var(--button-text-color);
+  }
+
+
+.menu {
+    display: flex;
+    list-style: none;
+    
+
+}
+
+.me {
+    display: flex;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+}
+*/
