@@ -5,47 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
     <title>Contatos</title>
 </head>    
 <body>
-    <header>
-        <div class="container">
-            <div class="logo"><img src="img/logo.jpg" ></div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="sobre_nos.html">Sobre</a>
-                    <a href="dados_facilitados.html">Dados</a>
-                    <a href="cartilha.html">Cartilhas</a>
-                    <a href="contato.html">Contatos</a>
-                </nav>
+   <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo-removebg-preview.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>             
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header>
 <main>
-    <form name="meu_form">
+    <form id="form">
 
         <h1>Entre em contato</h1>
         
-        <label for="nome">Nome</label>
-        <input type="text" id="nomeid" placeholder="Tiago Vale" required="required" name="nome" />
-        <br>    
-        <label for="fone">Telefone</label>
-        <input type="tel" id="telefoneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
-        <br>        
-        <label for="email">Email</label>
-        <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" />
-        <br>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nomeid" placeholder="Digite seu nome:" required="required" name="nome" />
+
+        <label for="nascimento">Nascimento:</label> 
+        <input type="date" id="nasci" name="nascimento" />   
+
+        <label for="fone">Telefone:</label>
+        <input type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
+              
+        <label for="email">Email:</label>
+        <input type="email" id="emailid" placeholder="email@mail.com" name="email" />
+
+        <label for="job">Veiculo:</label>
+        <select name="job" id="job">
+            <option value="">---------</option>
+            <option value="moto">Moto</option>
+            <option value="carro">Carro</option>
+            <option value="caminhao">Caminhão</option>
+        </select>
+
+       
+        <label for="message">Mensagem:</label>
+        <textarea name="message" id="message" placeholder="Deixe sua opnião"></textarea>
       
-        <textarea placeholder="Deixe sua opnião"></textarea>
-      
-        <input type="submit" class="enviar" onclick="Enviar();" value="Enviar" />
-      </form>
+        <button type="submit">Enviar</button>    
+    </form>
 </main>
 </body>
 <div class="rodape">
     <footer>
-        Todos os direitos
+        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
     </footer>
 </div>
 </html>

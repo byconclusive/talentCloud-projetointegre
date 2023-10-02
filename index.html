@@ -5,151 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
     <title>HOME</title>
 </head>    
 <body>
-
     <header>
-        <div class="container">
-            <div class="logo"><img src="img/logo.jpg" ></div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="sobre_nos.html">Sobre</a>
-                    <a href="dados_facilitados.html">Dados</a>
-                    <a href="cartilha.html">Cartilhas</a>
-                    <a href="contato.html">Contatos</a>
-                </nav>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo-removebg-preview.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>             
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
-    </header>
-    <main>
-        <div class="container">
-            <div class="texto-topo">
-                <h1>Bem Vindo</h1>
-                <h2>Aqui no site você encontra informações sobre a situação das rodovias </h2>
-            </div>
-        </div>
-        <!--criação carossel-->
-        <div class="slider">
-            <div class="slides">
-
-                <input type="radio" nome="radio-btn" id="radio1">
-                <input type="radio" nome="radio-btn" id="radio2">
-                <input type="radio" nome="radio-btn" id="radio3">
-                <input type="radio" nome="radio-btn" id="radio4">
-
-                <div class="slide first">
-                    <img src="img/rodovia1.jpg" alt="imagem 1"/>
-                </div>
-                <div class="slide">
-                    <img src="img/rodovia2.jpeg" alt="imagem 2"/>
-                </div>
-                <div class="slide">
-                    <img src="img/rodovia3.jpeg" alt="imagem 3"/>
-                </div>
-                <div class="slide">
-                    <img src="img/rodovia4.jpg" alt="imagem 4"/>
-                </div>
-
-                <!--Navigation auto-->
-
-                <div class="navigatio-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-            </div>
-            <div class="manual-navigation">
-                <label for="radio1" class="manual-btn"></label>
-                <label for="radio2" class="manual-btn"></label>
-                <label for="radio3" class="manual-btn"></label>
-                <label for="radio4" class="manual-btn"></label>
-
-            </div>
-
-                
-        </div>
-
-        <div class="card-info">
-
-            <div class="card-header post">        
-                <div class="ml-5 mt-1">
-                    <h5 class="m-0 titulo-servico-detran text-uppercase">Acesso Rápido</h5>
-                </div>
-            </div>
-        
-            <div class="card-body m-0 p-0">
-                <div class='row m-0'>
-                    <div class='col-md col-xs-12 m-0 p-0'>
-                        <div class='list-group list-group-flush acesso-rapido-top'>                    
-                                    <a href="index.html" class="list-group-item border list-group-item-action text-uppercase div-icons-atendimento icon-posicao3">
-                                    <div class="div-icons-atendimento icon-posicao3">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i> HOME                             
-                                        </div>
-                                    </div>
-                                        </a>
-                                        <a href="sobre_nos.html" class="list-group-item border list-group-item-action text-uppercase div-icons-veiculos icon-posicao1">
-                                    <div class="div-icons-veiculos icon-posicao1">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i> SOBRE NOS                            
-                                        </div>
-                                    </div>
-                                    </a>
-                                    
-                        </div>
-                    </div>
-                
-                    <div class='col-md col-xs-12 m-0 p-0'>
-                        <div class='list-group list-group-flush acesso-rapido-top'>                    
-                                <a href="dados_facilitados.html" class="list-group-item border list-group-item-action text-uppercase div-icons-veiculos">
-                                    <div class="div-icons-veiculos">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i> DADOS FACILITADOS
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="cartilha.html" class="list-group-item border list-group-item-action text-uppercase div-icons-habilitacao">
-                                    <div class="div-icons-habilitacao">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i>CARTILHA                         
-                                        </div>
-                                    </div>
-                                </a>
-                                        
-                        </div>
-                    </div>
-                    <div class='col-md col-xs-12 m-0 p-0'>
-                        <div class='list-group list-group-flush acesso-rapido-top'>                    
-                                <a href="#" class="list-group-item border list-group-item-action text-uppercase div-icons-veiculos icon-posicao7">
-                                    <div class="div-icons-veiculos icon-posicao7">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i> COMPONENTES                          
-                                        </div>
-                                    </div>
-                                </a>
-                                <a href="contato.html" class="list-group-item border list-group-item-action text-uppercase div-icons-infracoes icon-posicao5">
-                                    <div class="div-icons-infracoes icon-posicao5">
-                                        <div class="btn-menu">
-                                            <i class="fas fa-angle-right"></i> CONTATOS
-                                        </div>
-                                    </div>
-                                </a>                              
-                        </div>
-                    </div>
-                </div>   
-            </div>
-        </div>
-    </main>
-<!--https://www.devmedia.com.br/html-footer-delimitando-os-conteudos-de-rodape-no-html/43511 //// 
-https://codepen.io/sdthornton/pen/wBZdXq  (referencia para colocar css nas card box ou Grid Layout) -->
-
-    <div class="rodape">
-        <footer>
-            Todos os direitos
-        </footer>
-    </div>
+    </header>    
 </body>
+<div class="rodape">
+    <footer>
+        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
+    </footer>
+</div>
 </html>

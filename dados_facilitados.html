@@ -5,46 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
     <title>Dados</title>
 </head>    
 <body>
     <header>
-        <div class="container">
-            <div class="logo"><img src="img/logo.jpg" ></div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="sobre_nos.html">Sobre</a>
-                    <a href="dados_facilitados.html">Dados</a>
-                    <a href="cartilha.html">Cartilhas</a>
-                    <a href="contato.html">Contatos</a>
-                </nav>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo-removebg-preview.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>             
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header>
-<main>
-    <div class="conatainer_texto_topo dados_facilitados">
-        <div class="texto-top">
-            <h1>Dados facilitados</h1>
-        </div>
-        <div class="mapa">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31799325.127461657!2d-73.21133998023036!3d-13.365594293792704!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9c59c7ebcc28cf%3A0x295a1506f2293e63!2sBrasil!5e0!3m2!1spt-BR!2sbr!4v1693331927813!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
-        </div>
-    </div>
-    <div class="container_regioes">
-        <div class="imaga_regiao1">
-            <img src="img/rodovia4.jpg" alt="imagem 1" width="10%" /> <H2>Fundador</H2>
-        </div>
-        <div class="imaga_regiao2">
-            <img src="img/rodovia3.jpeg" alt="imagem 1" width="10%" /> <H2>Fundador2</H2>
-        </div>
-    </div>
-
-</main>
 </body>
 <div class="rodape">
     <footer>
-        Todos os direitos
+        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
     </footer>
 </div>
 </html>

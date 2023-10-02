@@ -5,64 +5,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/scripts.js" defer></script>
     <title>Sobre</title>
 </head>    
 <body>
     <header>
-        <div class="container">
-            <div class="logo"><img src="img/logo.jpg" ></div>
-            <div class="menu">
-                <nav>
-                    <a href="index.html">Home</a>
-                    <a href="sobre_nos.html">Sobre</a>
-                    <a href="dados_facilitados.html">Dados</a>
-                    <a href="cartilha.html">Cartilhas</a>
-                    <a href="contato.html">Contatos</a>
-                </nav>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo-removebg-preview.png">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>             
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
+                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
+                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
+                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
+                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
             </div>
         </div>
     </header>
-<main>
-    <div class="conatainer_texto_topo">
-        <div class="texto-top">
-            <h1>Sobre Nós</h1>
-            <h2>O projeto foi de idelizado pensando no cidadão comum que não tem acesso a informações ou não tem a facilidade
-                de entender...
-            </h2>
-        </div>
-    </div>
-
-    <div class="container_informacao">
-        <div class="info1">
-            <h1>Missao</h1>
-        </div>
-        <div class="info2">
-            <h1>Visao</h1>
-        </div>
-        <div class="info3">
-            <h1>Valores</h1>
-        </div>
-    </div>
-
-    <div class="imagem_corpo">
-        <div class="imaga_centro">
-            <img src="img/rodovia1.jpg" alt="imagem 1" width="50%" />
-        </div>
-    </div>
-
-    <div class="container_responsavel">
-        <div class="imaga_fundador1">
-            <img src="img/usuario.png" alt="imagem 1" width="10%" /> <H2>Fundador/ Desenvolvedor </H2>
-        </div>
-        <div class="imaga_fundador2">
-            <img src="img/usuario.png" alt="imagem 1" width="10%" /> <H2>Fundador/ Desenvolvedor</H2>
-        </div>
-    </div>
-</main>    
 </body>
 <div class="rodape">
     <footer>
-        O uso deste Site está sujeito aos termos de uso expressos. Ao usar este site, você concorda em estar vinculado por estes Termos de Serviço
+        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
     </footer>
 </div>
 </html>
