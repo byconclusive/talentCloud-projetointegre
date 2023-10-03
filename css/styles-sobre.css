@@ -35,11 +35,6 @@
     color: var(--button-text-color);
   }
 */
-*{
-
-  font-family: Arial, Helvetica, sans-serif;
-
-}
 
 *{
 
@@ -189,15 +184,6 @@ footer {
   color: white;
 }
 
-<<<<<<< HEAD
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  width: 500px;
-  margin: 0 auto;
-  padding: 10px;
-=======
 form{
   display: flex;
   flex-direction: column;
@@ -205,7 +191,6 @@ form{
   padding: 20px;
   width: 600px;
   
->>>>>>> jfilho
 }
 
 label{
@@ -231,32 +216,17 @@ form button {
   font-size: 1.1rem;
 }
 
-<<<<<<< HEAD
-.enviar:hover {
-  background-color: #333;
-  color:#F07D21;
-=======
 .enviar:hover{
   color: #F07D21;
   background-color: #000000;
   font-weight: bolder;
->>>>>>> jfilho
 }
 
 .enviar:active{
   color: #088c19;
 }
 
-<<<<<<< HEAD
-.checkbox {
-  display: flex;
-  width: 30px;
-  padding: 2px;
-}
-
-=======
 .checkbox{
   display: flex;
   width: 30px;
 }
->>>>>>> jfilho
