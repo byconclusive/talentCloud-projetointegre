@@ -29,7 +29,9 @@ header{
 #titulo-principal{
     text-align: center;
     text-decoration:underline;
+    font-size: 30px;
 }
+
 
 main nav p {
     text-align: center;
@@ -40,9 +42,10 @@ li {
     display: inline;
 }
 
-/*header nav ul li a:hover{
-    font-size: 22px; 
-}*/
+main nav ul li a p {
+    color: #000000;
+    font-weight: normal;
+}
 
 
 li h2 a{
@@ -166,7 +169,6 @@ footer{
    font-size: 20px;
    display: flex;
    text-align: center;
-
 }
 
 
