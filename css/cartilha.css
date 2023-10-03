@@ -1,47 +1,11 @@
-/*Reset do parâmetros da página
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  :root {
-    font-size: 62.5%;
-    --nav-bg-color: #121212;
-    --nav-text-color: white;
-    --button-bg-color: #0052CE;
-    --button-text-color: white;
-  }
-  
-  body {
-    font-size: 1.6rem;
-    font-family: 'Roboto', sans-serif;
-  }
-  
-  a {
-    text-decoration: none;
-  }
-  
-  .button {
-    display: inline-flex;
-    justify-content: space-between;
-    align-items: center;
-  
-    padding: 1rem 1.6rem;
-  
-    background: var(--button-bg-color);
-    border-radius: .8rem;
-  
-    color: var(--button-text-color);
-  }
-*/
-
 *{
 
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0.5;
+  padding: 0;
+  box-sizing: border-box;
 
 }
-
 
 .menu {
   list-style: none;
@@ -180,4 +144,51 @@ footer {
   display: flex;
   text-align: center;
   color: white;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding: 20px;
+  width: 600px;
+  
+}
+
+label{
+  font-weight: bold;
+  margin-bottom: 5px;
+
+}
+
+input, select, textarea{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.1rem;
+}
+
+.enviar:hover{
+  color: #F07D21;
+  background-color: #000000;
+  font-weight: bolder;
+}
+
+.enviar:active{
+  color: #088c19;
+}
+
+.checkbox{
+  display: flex;
+  width: 30px;
 }
