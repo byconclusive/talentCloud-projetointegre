@@ -44,6 +44,10 @@ h3 {
   color: black
 }
 
+h3 {
+  text-decoration: underline;
+}
+
 main div ul li {
   display: inline-block;
   text-align: center;

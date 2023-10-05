@@ -1,9 +1,6 @@
 *{
 
   font-family: Arial, Helvetica, sans-serif;
-  margin: 0.5;
-  padding: 0;
-  box-sizing: border-box;
 
 }
 
@@ -44,26 +41,28 @@ h3 {
   color: black
 }
 
-main div ul li {
+main a{
   display: inline-block;
   text-align: center;
-  width: 40%;
+  width: 100%;
   vertical-align: top;
-  margin: 2% 2%;
-  padding: 30px 20px;
+  margin: 2% 8%;
+  padding: 20px 20px;
   box-sizing: border-box;
   border: 2px solid #000000;
   border-radius: 10px;
-  max-width: 40%;
+  max-width: 90%;
 }
 
-main div ul li:hover {
-  border-color: #F07D21;
+main a:hover{
+  border: 2px solid #F07D21;
 }
 
-main div ul li:active {
-  border-color: #088c19;
+main a:active{
+  border: 2px solid #088c19;
 }
+
+
 
 .caixa {
   background-color: black;
@@ -87,36 +86,43 @@ a:active {
   color: #088c19;
 }
 
-#sobre {
-  text-align: center;
-}
-
 main h2 {
-  font-size: 30px;
+  font-size: 40px;
 }
 
 main p {
-  font-size: 20px;
-}
-
-.valores {
-  font-size: 1.5em;
-}
-
-#responsaveis {
+  display: flex;
+  font-size: 16px;
   text-align: center;
 }
 
-#banner2 {
-  width: 60%;
-  margim: 10px;
-  margin-left: 40px;
-  padding: 30px;
-  display: flex;
-  border-radius: 50px;
-  margin: auto;
-  padding: auto;
+main p:hover{
+  font-size: 20px;
 }
+
+
+h2 {
+  justify-content: center;
+  text-align: center;
+  text-decoration: underline;
+}
+
+main{
+  display: flexbox;
+}
+
+
+nav a img {
+  max-width: 10rem;
+  margim: auto;
+  padding: 10px;
+  display: flex;
+  border-radius: 40px;
+  align-items: center;
+}
+
+
+
 
 footer {
   background-color: black;
@@ -146,49 +152,5 @@ footer {
   color: white;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 20px;
-  width: 600px;
-  
-}
 
-label{
-  font-weight: bold;
-  margin-bottom: 5px;
 
-}
-
-input, select, textarea{
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1.1rem;
-}
-
-form button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  font-size: 1.1rem;
-}
-
-.enviar:hover{
-  color: #F07D21;
-  background-color: #000000;
-  font-weight: bolder;
-}
-
-.enviar:active{
-  color: #088c19;
-}
-
-.checkbox{
-  display: flex;
-  width: 30px;
-}
