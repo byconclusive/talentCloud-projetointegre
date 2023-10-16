@@ -4,66 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/scripts.js" defer></script>
+    <link rel="stylesheet" href="asserts/css/style.css">
+    <script src="asserts/js/scripts.js" defer></script>
     <title>Contatos</title>
 </head>    
 <body>
-   <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="img/logo-removebg-preview.png">
+    <header class="menu_pagina">
+        <nav class="menu_pagina__nav-bar">
+            <div class="logo_menu">
+                <img src="asserts/img/logo-removebg-preview.png">
             </div>
-            <div class="nav-list">
+            <div class="menu_pagina__nav-list">
                 <ul>
-                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
-                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
-                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                    <li class="menu_pagina__nav-item"> <a href="index.html" class="menu_pagina__nav-link">Home</a></li>
+                    <li class="menu_pagina__nav-item"> <a href="sobre_nos.html" class="menu_pagina__nav-link">Sobre</a></li>
+                    <li class="menu_pagina__nav-item"> <a href="dados_facilitados.html" class="menu_pagina__nav-link">Dados</a></li>
+                    <li class="menu_pagina__nav-item"> <a href="cartilha.html" class="menu_pagina__nav-link">Cartilhas</a></li>
+                    <li class="menu_pagina__nav-item"> <a href="contato.html" class="menu_pagina__nav-link">Contatos</a></li>
                 </ul>
             </div>
-            <div class="login-button">
+            <div class="menu_pagina__login-button">
                 <button><a href="#">Entrar</a></button>
             </div>
 
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            <div class="menu_pagina__mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="asserts/img/menu_white_36dp.svg" alt=""></button>
             </div>
         </nav>             
-        <div class="mobile-menu">
+        <div class="menu_pagina__mobile-menu">
             <ul>
-                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
-                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
-                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
-                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
+                <li class="menu_pagina__nav-item"> <a href="index.html" class="menu_pagina__nav-link">Home</a></li>
+                <li class="menu_pagina__nav-item"> <a href="sobre_nos.html" class="menu_pagina__nav-link">Sobre</a></li>
+                <li class="menu_pagina__nav-item"> <a href="dados_facilitados.html" class="menu_pagina__nav-link">Dados</a></li>
+                <li class="menu_pagina__nav-item"> <a href="cartilha.html" class="menu_pagina__nav-link">Cartilhas</a></li>
+                <li class="menu_pagina__nav-item"> <a href="contato.html" class="menu_pagina__nav-link">Contatos</a></li>
             </ul>
 
-            <div class="login-button">
+            <div class="menu_pagina__login-button">
                 <button><a href="#">Entrar</a></button>
             </div>
         </div>
-    </header>
-<main>
-    <form id="form">
+    </header> 
+<main class="main_contato"> 
+    <form id="form" class="main_contato_form">
 
-        <h1>Entre em contato</h1>
+        <h1 class="main_contato_h1">Entre em contato</h1>
         
-        <label for="nome">Nome:</label>
-        <input type="text" id="nomeid" placeholder="Digite seu nome:" required="required" name="nome" />
+        <label class="main_contato__label" for="nome">Nome:</label>
+        <input class="main_contato__input" type="text" id="nomeid" placeholder="Digite seu nome:" required="required" name="nome" />
 
-        <label for="nascimento">Nascimento:</label> 
-        <input type="date" id="nasci" name="nascimento" />   
+        <label class="main_contato__label" for="nascimento">Nascimento:</label> 
+        <input class="main_contato__input" type="date" id="nasci" name="nascimento" />   
 
-        <label for="fone">Telefone:</label>
-        <input type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
+        <label class="main_contato__label" for="fone">Telefone:</label>
+        <input class="main_contato__input" type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
               
-        <label for="email">Email:</label>
-        <input type="email" id="emailid" placeholder="email@mail.com" name="email" />
+        <label class="main_contato__label" for="email">Email:</label>
+        <input class="main_contato__input" type="email" id="emailid" placeholder="email@mail.com" name="email" />
 
-        <label for="job">Veiculo:</label>
-        <select name="job" id="job">
+        <label class="main_contato__label" for="job">Veiculo:</label>
+        <select class="main_contato__select" name="job" id="job">
             <option value="">---------</option>
             <option value="moto">Moto</option>
             <option value="carro">Carro</option>
@@ -71,16 +71,16 @@
         </select>
 
        
-        <label for="message">Mensagem:</label>
-        <textarea name="message" id="message" placeholder="Deixe sua opnião"></textarea>
+        <label class="main_contato__label" for="message">Mensagem:</label>
+        <textarea class="main_contato__textarea" name="message" id="message" placeholder="Deixe sua opnião"></textarea>
       
-        <button type="submit">Enviar</button>    
+        <button class="mani_contato__form_button" type="submit">Enviar</button>    
     </form>
 </main>
 </body>
-<div class="rodape">
+<div class="rodape_pagina">
     <footer>
-        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
+        <H3 class="rodape_pagina__H3">Todo o conteúdo deste site está publicado sob a licença@</H3>
     </footer>
-</div>
+    </div>
 </html>

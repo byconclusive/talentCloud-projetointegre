@@ -31,10 +31,6 @@ form.addEventListener("submit", (event) => {
         alert("Por favor, preencha o seu Telefone");
         return;
     }
-
-
-
-
     //se todos os campos estiverem corretamente preenchidos, envie o form
 
     form.submit();
@@ -60,7 +56,7 @@ return false;
 //Menu responsivo 
 
 function menuShow() {
-    let menuMobile = document.querySelector('.mobile-menu');
+    let menuMobile = document.querySelector('.menu_pagina__mobile-menu');
     if (menuMobile.classList.contains('open')) {
         menuMobile.classList.remove('open');
         document.querySelector('.icon').src = "img/menu_white_36dp.svg";

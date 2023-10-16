@@ -7,106 +7,105 @@
 
 }
 
-header{
+.menu_pagina{
     background-color: #24252a;
     box-shadow: 0px 3px 10px #464646;
 }
-.nav-bar{
+.menu_pagina__nav-bar{
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 6rem;
 }
 
-.logo{
+.logo_menu{
     display: flex;
     align-items: center;   
     
 }
 
-.logo img{
+.logo_menu img{
     width: 70px;
 }
 
-.nav-list {
+.menu_pagina__nav-list {
     display: flex;
-    align-items: center;
-    
+    align-items: center;   
 
 }
 
-.nav-list ul {
+.menu_pagina__nav-list ul {
     display: flex;
     justify-content: center;
     list-style: none;
 }
 
-.nav-item {
+.menu_pagina__nav-item {
     margin: 0 15px;    
 }
 
-.nav-link {
+.menu_pagina__nav-link {
     text-decoration: none;
     font-size: 1.15rem;
     color: #fff;
     font-weight: 400;
 }
 
-.login-button button {
+.menu_pagina__login-button button {
     border: none;
     padding: 10px 15px;
     border-radius: 5px;
     background-color: darkorange;
 }
 
-.login-button button a {
+.menu_pagina__login-button button a {
     text-decoration: none;
     color: #fff;
     font-weight: 500;
     font-size: 1.1rem;
 }
 
-.mobile-menu-icon {
+.menu_pagina__mobile-menu-icon {
     display: none;
 }
 
-.mobile-menu {
+.menu_pagina__mobile-menu {
     display: none;
 }
 
 
 @media screen and (max-width: 730px) {
-    .nav-bar {
+    .menu_pagina__nav-bar {
         padding: 1.5rem 4rem;
     }
-    .nav-item {
+    .menu_pagina__nav-item {
         display: none;
     }
-    .login-button {
+    .menu_pagina__login-button {
         display: none;
     }
-    .mobile-menu-icon {
+    .menu_pagina__mobile-menu-icon {
         display: block;
     }
-    .mobile-menu-icon button {
+    .menu_pagina__mobile-menu-icon button {
         background-color: transparent;
         border: none;
         cursor: pointer;
     }
-    .mobile-menu ul {
+    .menu_pagina__mobile-menu ul {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding-bottom: 1rem;
     }
-    .mobile-menu .nav-item {
+    .menu_pagina__mobile-menu .menu_pagina__nav-item {
         display: block;
         padding-top: 1.2rem;
     }
-    .mobile-menu .login-button {
+    .menu_pagina__mobile-menu .menu_pagina__login-button {
         display: block;
         padding: 1rem 2rem;
     }
-    .mobile-menu .login-button button {
+    .menu_pagina__mobile-menu .menu_pagina__login-button button {
         width: 100%;
     }
     .open {
@@ -114,29 +113,30 @@ header{
     }
 }
 
-main{
+.main_contato{
     padding: 2.5rem;
 }
 
-h1 {
-    text-align: center;
-}
-
-form {
+.main_contato_form {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    width: 500px;
     margin: 0 auto;
+    font-size: 15px;
+    max-width: 500px;
 }
 
-label{
+.main_contato_h1 {
+    text-align: center;
+}
+
+.main_contato__label{
     font-weight: bold;
     margin-bottom: 5px;
 
 }
 
-input, select, textarea{
+.main_contato__input, .main_contato__select, .main_contato__textarea{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
@@ -144,7 +144,7 @@ input, select, textarea{
     font-size: 1.1rem;
 }
 
-form button {
+.mani_contato__form_button {
     padding: 10px;
     border: none;
     border-radius: 5px;
@@ -153,7 +153,7 @@ form button {
     font-size: 1.1rem;
 }
 
-.rodape{
+.rodape_pagina{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -162,23 +162,18 @@ form button {
     height: 100px;
     box-sizing: border-box;
 }
-.rodape h3{
+.rodape_pagina__H3{
     font-size: 11px;
     color: #fff;
-}
-form {
-    font-family: Verdana,Tahoma,sans-serif;
-    font-size: 15px;
-    max-width: 500px;
 }
 
 
 @media screen and (max-width: 730px) {
-    main{
+    .main_contato{
         padding: 1.5rem;
     }
 
-    form {
+    .main_contato_form {
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
@@ -186,26 +181,26 @@ form {
         margin: 0 auto;
     }
 
-    .logo img{
+    .logo_menu img{
         width: 40px;
     }
     
-    label{        
+    .main_contato__label{        
         margin-bottom: 3px;    
     }
     
-    input, select, textarea{
+    .main_contato__input, .main_contato__select, .main_contato__textarea{
         padding: 5px;      
         font-size: 0.9rem;
     }
 
-    h1{
+    .main_contato_h1{
         font-size: 20px;
     }
 
 }
 @media screen and (max-width: 530px) {
-    form {
+    .main_contato_form{
         display: flex;
         flex-direction: column;
         gap: 0.5rem;
