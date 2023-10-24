@@ -211,3 +211,7 @@ for (let dado of dados){
     cont++
 }
 
+
+function criarTooltip(){
+    parent.dataset.tooltip = "Estad"
+}
