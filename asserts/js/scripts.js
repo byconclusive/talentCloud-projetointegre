@@ -1,10 +1,11 @@
-const form = document.querySelector("#form")
-const nameInput = document.querySelector("#nomeid")
-const nascimentoInput = document.querySelector("#nasci")
-const telefoneInput = document.querySelector("#telefoneid")
-const emailInput = document.querySelector("#emailid")
-const jobSelect = document.querySelector("#job")
-const messageTextarea = document.querySelector("#message")
+const form = document.querySelector("#form");
+const nameInput = document.querySelector("#nomeid");
+const nascimentoInput = document.querySelector("#nasci");
+const telefoneInput = document.querySelector("#telefoneid");
+const emailInput = document.querySelector("#emailid");
+const jobSelect = document.querySelector("#job");
+const messageTextarea = document.querySelector("#message");
+const campos = document.querySelectorAll('.main_contato__input');
 
 form.addEventListener("submit", (event) => {
  event.preventDefault();
@@ -14,9 +15,27 @@ form.addEventListener("submit", (event) => {
         alert("Por favor, preencha o seu nome");
         return;
     }
+
+    function nameValidate(){
+        if(campos[0].value.length < 3)
+        {
+           console.log('Nome deve ter 3 caracteres');
+        }
+        else
+        {
+            console.log('Validado o Nome');
+        }
+    }
+
     // verifica a data de nascimento 
     if (nascimentoInput.value === "") {
         alert("Selecione sua data nascimento!");
+        return;
+    }
+
+     // Verificando Telefone
+     if (telefoneInput.value === "") {
+        alert("Por favor, preencha o seu Telefone");
         return;
     }
 
@@ -25,12 +44,12 @@ form.addEventListener("submit", (event) => {
         alert("Por favor, preencha o seu e-mail");
         return;
     }
-
-     // Verificando Telefone
-    if (telefoneInput.value === "" || !isTelefoneValid(telefoneInput.value)) {
-        alert("Por favor, preencha o seu Telefone");
+    // Verificando modelo carro 
+    if (jobSelect.value === "") {
+        alert("Por favor, selecione modelo do veiculo");
         return;
     }
+    
     //se todos os campos estiverem corretamente preenchidos, envie o form
 
     form.submit();

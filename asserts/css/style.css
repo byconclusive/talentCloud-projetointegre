@@ -136,12 +136,16 @@
 
 }
 
-.main_contato__input, .main_contato__select, .main_contato__textarea{
+.main_contato__input , .main_contato__select, .main_contato__textarea{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1.1rem;
+}
+
+.main_contato__span_reqired{
+    display: none;
 }
 
 .mani_contato__form_button {
@@ -151,6 +155,11 @@
     background-color: #333;
     color: #fff;
     font-size: 1.1rem;
+}
+
+.mani_contato__form_button:disabled{
+    cursor: not-allowed;
+    background: #fff;
 }
 
 .rodape_pagina{

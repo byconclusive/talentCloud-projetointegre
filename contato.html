@@ -46,21 +46,25 @@
         </div>
     </header> 
 <main class="main_contato"> 
-    <form id="form" class="main_contato_form">
+    <form id="form" class="main_contato_form" >
 
         <h1 class="main_contato_h1">Entre em contato</h1>
         
         <label class="main_contato__label" for="nome">Nome:</label>
-        <input class="main_contato__input" type="text" id="nomeid" placeholder="Digite seu nome:" required="required" name="nome" />
+        <input class="main_contato__input " type="text" id="nomeid" placeholder="Digite seu nome:" name="nome" oninput="nameValidate()"/>
+        <span class="main_contato__span_reqired">Nome deve ter no minimo 3 caracteres</span>
 
         <label class="main_contato__label" for="nascimento">Nascimento:</label> 
-        <input class="main_contato__input" type="date" id="nasci" name="nascimento" />   
+        <input class="main_contato__input required" type="date" id="nasci" name="nascimento" />   
+        <span class="main_contato__span_reqired">Insira data de nascimento</span>
 
         <label class="main_contato__label" for="fone">Telefone:</label>
-        <input class="main_contato__input" type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
+        <input class="main_contato__input required" type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
+        <span class="main_contato__span_reqired">Insira um numero de telefone</span>
               
         <label class="main_contato__label" for="email">Email:</label>
-        <input class="main_contato__input" type="email" id="emailid" placeholder="email@mail.com" name="email" />
+        <input class="main_contato__input required" type="email" id="emailid" placeholder="email@mail.com" name="email" />
+        <span class="main_contato__span_reqired">Insira um email</span>
 
         <label class="main_contato__label" for="job">Veiculo:</label>
         <select class="main_contato__select" name="job" id="job">
