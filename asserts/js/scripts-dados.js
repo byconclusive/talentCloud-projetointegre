@@ -174,6 +174,11 @@ function criarTooltip(uf){
         }
     }
 
+    /*
+    dado = dados.filter((elemento) => elemento.estado == uf)
+    divResumoEstado = geraMessagem(dado)
+    sectionMapaInt.appendChild(divResumoEstado)
+    */
 }
 
 //EVENTOS

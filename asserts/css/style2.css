@@ -1,4 +1,7 @@
 .mapas{
+    background-image: url("asserts/img/bkg.jpg");
+    background-color: transparent;
+
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -13,14 +16,14 @@
 }
 
 #map-inter path {
-    fill: SandyBrown;
-    stroke: #eee;
+    fill: gainsboro;
+    stroke: black;
     stroke-width: .25;
 }
 
 #map-inter path:hover {
-    fill: #006284;
-    transition: 0.4s;
+    fill: lightcyan;
+    transition: 0.6s;
     cursor: pointer;
 }
 
@@ -520,3 +523,4 @@ form {
       margin: 0 auto;
   }
 }
+

@@ -1,0 +1,28 @@
+estado,uf,codigo,regiao
+Acre,AC,12,3
+Alagoas,AL,27,2
+Amapá,AP,16,3
+Amazonas,AM,13,3
+Bahia,BA,29,2
+Ceará,CE,23,1
+Distrito Federal,DF,53,1
+Espírito Santo,ES,32,4
+Goiás,GO,52,1
+Maranhão,MA,21,2
+Mato Grosso,MT,51,1
+Mato Grosso do Sul,MS,50,1
+Minas Gerais,MG,31,4
+Pará,PA,15,3
+Paraíba,PB,25,2
+Paraná,PR,41,5
+Pernambuco,PE,26,2
+Piauí,PI,22,2
+Rio Grande do Norte,RN,24,2
+Rio Grande do Sul,RS,43,5
+Rio de Janeiro,RJ,33,4
+Rondônia,RO,11,3
+Roraima,RR,14,3
+Santa Catarina,SC,42,5
+São Paulo,SP,35,4
+Sergipe,SE,28,2
+Tocantins,TO,17,1
