@@ -116,7 +116,7 @@ main li {
     align-items: center;
 }
 
-#banner1 {
+.main__banner1 {
     width: 60%;
     margim: 10px;
     margin-left: 40px;
@@ -127,13 +127,13 @@ main li {
     padding: auto;
 }
 
-.conteudo {
+.main__conteudo {
     font-size: 20px;
     width: 60%;
     justify-content: center;
 }
 
-.paginas {
+.main__paginas {
     font-size: 20px;
     width: 40%;
 }
@@ -165,5 +165,65 @@ footer{
    text-align: center;
 }
 
+@media screen and (max-width: 530px) {
+    main{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    .main__conteudo{
+        margin-bottom: 10px;
+        margin-left: auto;
+        width: 100%;
+        height: auto;
+    }
 
+    .main__banner1 {
+        width: 200%;
+    }
 
+    .main__paginas> ul>li{
+        width: 100%;
+        padding: 10px;
+    }
+    .main__paginas> ul{
+        justify-content: center;
+        width: 100%;
+        margin: 10px;
+    }
+}
+
+@media screen and (min-width: 531px) and (max-width: 980px) {
+    main{
+        flex-wrap: grid;
+        align-items: flex;
+        gap: 0.5rem;
+    }
+    .main__conteudo{
+        margin-bottom: 10px;
+        margin-left: auto;
+        width: 100%;
+    }
+
+    .main__paginas{
+        flex-wrap: wrap;
+    }
+
+    .main__paginas> ul>li{
+        display: block;
+        width: auto;
+        height: auto;
+        padding: 20px;
+        margin: 12px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    .main__paginas> ul{
+        flex-wrap: wrap;
+        width: auto;
+        margin: 10px
+    }
+}

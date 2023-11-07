@@ -1,4 +1,4 @@
-*{
+* {
 
   font-family: Arial, Helvetica, sans-serif;
   margin: 0.5;
@@ -103,11 +103,11 @@ main p {
   font-size: 20px;
 }
 
-.valores {
+.main__valores {
   font-size: 1.5em;
 }
 
-#responsaveis {
+.main__responsaveis {
   text-align: center;
 }
 
@@ -150,49 +150,67 @@ footer {
   color: white;
 }
 
-form{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  padding: 20px;
-  width: 600px;
-  
+.main__responsaveis-link{
+  font-weight: 100;
 }
 
-label{
+main div ul a h4 {
   font-weight: bold;
-  margin-bottom: 5px;
-
 }
 
-input, select, textarea{
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 1.1rem;
+.main__responsaveis-lista {
+  padding: 8px;
 }
 
-form button {
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  background-color: #333;
-  color: #fff;
-  font-size: 1.1rem;
+.main__responsaveis-foto{
+  margin: 5px;
+  width: 30%;
 }
 
-.enviar:hover{
-  color: #F07D21;
-  background-color: #000000;
-  font-weight: bolder;
+@media screen and (max-width: 530px){
+  main {
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+  }
+
+  .main__valores-lista {
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+  }
+  #banner2 {
+    width: 100%;
+  }
+  .main__responsaveis{
+    display: block;
+  }
+
+  .main__responsaveis-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+ 
 }
 
-.enviar:active{
-  color: #088c19;
-}
+@media screen and (min-width: 531px) and (max-width: 980px){
+  main {
+    display: block;
+    margin: auto;
+  }
 
-.checkbox{
-  display: flex;
-  width: 30px;
+  .main__valores-lista {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #banner2 {
+    width: 90%;
+  }
+
+  .main__responsaveis-lista {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
