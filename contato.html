@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asserts/css/style.css">
+    <script src="asserts/js/scripts.js" defer></script>
+    <script src="asserts/js/rodape.js" type="text/javascript" defer></script>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <title>Contatos</title>
+</head>    
+<body>
+<script src="../asserts/js/topo.js"></script> 
+<main class="main_contato"> 
+    <form id="form" class="main_contato_form" >
+
+        <h1 class="main_contato_h1">Entre em contato</h1>
+        
+        <label class="main_contato__label" for="nome">Nome:</label>
+        <input class="main_contato__input " type="text" id="nomeid" placeholder="Digite seu nome:" name="nome" oninput="nameValidate()"/>
+        <span class="main_contato__span_reqired">Nome deve ter no minimo 3 caracteres</span>
+
+        <label class="main_contato__label" for="nascimento">Nascimento:</label> 
+        <input class="main_contato__input required" type="date" id="nasci" name="nascimento" />   
+        <span class="main_contato__span_reqired">Insira data de nascimento</span>
+
+        <label class="main_contato__label" for="fone">Telefone:</label>
+        <input class="main_contato__input required" type="tel" id="telefoneid" placeholder="Telefone" name="fone"/>
+        <span class="main_contato__span_reqired">Insira um numero de telefone</span>
+              
+        <label class="main_contato__label" for="email">Email:</label>
+        <input class="main_contato__input required" type="email" id="emailid" placeholder="email@mail.com" name="email" />
+        <span class="main_contato__span_reqired">Insira um email</span>
+
+        <label class="main_contato__label" for="job">Veiculo:</label>
+        <select class="main_contato__select" name="job" id="job">
+            <option value="">---------</option>
+            <option value="moto">Moto</option>
+            <option value="carro">Carro</option>
+            <option value="caminhao">Caminhão</option>
+        </select>
+
+       
+        <label class="main_contato__label" for="message">Mensagem:</label>
+        <textarea class="main_contato__textarea" name="message" id="message" placeholder="Deixe sua opnião"></textarea>
+      
+        <button class="mani_contato__form_button" type="submit">Enviar</button>    
+    </form>
+</main>
+<footer-component></footer-component>
+</body>
+</html>

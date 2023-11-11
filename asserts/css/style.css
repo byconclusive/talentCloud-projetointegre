@@ -1,0 +1,114 @@
+* {
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0.5;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 17px;
+  
+  }
+
+.main_contato{
+    padding: 2.5rem;
+}
+
+.main_contato_form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin: 0 auto;
+    font-size: 15px;
+    max-width: 500px;
+}
+
+.main_contato_h1 {
+    text-align: center;
+}
+
+.main_contato__label{
+    font-weight: bold;
+    margin-bottom: 5px;
+
+}
+
+.main_contato__input , .main_contato__select, .main_contato__textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.main_contato__span_reqired{
+    display: none;
+}
+
+.mani_contato__form_button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.mani_contato__form_button:disabled{
+    cursor: not-allowed;
+    background: #fff;
+}
+
+.rodape_pagina{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: darkorange;
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+}
+.rodape_pagina__H3{
+    font-size: 11px;
+    color: #fff;
+}
+
+
+@media screen and (max-width: 730px) {
+    .main_contato{
+        padding: 1.5rem;
+    }
+
+    .main_contato_form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .logo_menu img{
+        width: 40px;
+    }
+    
+    .main_contato__label{        
+        margin-bottom: 3px;    
+    }
+    
+    .main_contato__input, .main_contato__select, .main_contato__textarea{
+        padding: 5px;      
+        font-size: 0.9rem;
+    }
+
+    .main_contato_h1{
+        font-size: 20px;
+    }
+
+}
+@media screen and (max-width: 530px) {
+    .main_contato_form{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 300px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BraVias</title>
+    <link rel="shortcut icon" type="imagex/png" href="img/icone3.ico">
+    <link rel="stylesheet" href="/asserts/css/reset.css">
+    <link rel="stylesheet" href="/asserts/css/index.css">
+    <script src="asserts/js/rodape.js" type="text/javascript" defer></script>
+</head>
+
+<body>
+    <script src="/asserts/js/topo.js" defer></script> 
+    <!-- <header class="caixa">
+        <a href="index.html">
+            <h1 id="logo-H"><img src="asserts/img/logoheaderbranco.png" alt="Logo Bravias Cabeçario" width="20%"></h1>
+        </a>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a> </li>
+                <li><a href="sobre_nos.html">Sobre Nós</a></li>
+                <li><a href="dados_facilitados.html">Dados Facilitados</a></li>
+                <li><a href="cartilha.html">Cartilha</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header> -->
+    <main>
+        <nav class="main__conteudo">
+          <div style="border: 1px solid #ffffff; padding: 20px; position: relative;">
+        <h2 id="titulo-principal">Bem-vindo ao BraVias.</h2><br>
+        <p id="machine-typing">
+            O Brasil, país continental com mais de 8 milhões de quilômetros quadrados, 
+            possui uma extensa malha rodoviária de 75,8 mil quilômetros, sendo 65,4 mil 
+            pavimentados. Este site oferece informações sobre as rodovias federais, 
+            incluindo estado de conservação, acidentes, causas comuns e trechos perigosos. 
+            Os dados são da Polícia Rodoviária Federal (PRF), responsável pela segurança nas 
+            estradas federais. Acesse para conhecer as condições das estradas que conectam o Brasil.
+        </p>
+    
+    <script>
+        const text = document.getElementById('machine-typing').innerText;
+        document.getElementById('machine-typing').innerText = '';
+    
+        function typeWriter(text, i) {
+            if (i < text.length) {
+                document.getElementById('machine-typing').innerHTML += text.charAt(i);
+                i++;
+                setTimeout(() => typeWriter(text, i), Math.floor(Math.random() * 100) + 50); // Adapte os valores conforme necessário
+            }
+        }
+    
+        typeWriter(text, 0);
+    </script>
+    
+    
+    </div>
+    <img class="main__banner1" src="asserts/img/pngwing.com (1).png" alt="Foto de uma pista" style="width: 100%;">
+</div>
+
+        </nav>
+
+        <nav class="main__paginas">
+            <ul>
+                <li>
+                    <h2><a href="sobre_nos.html">Sobre Nós</a></h2>
+                    <br>
+                    <a a href="sobre_nos.html"><p>Tudo sobre os idelializados da página que mais cresce no Brasil - Bravias</p></a>
+                </li>
+                <li>
+                    <h2><a href="dados_facilitados.html">Dados Facilitados</a></h2>
+                    <br>
+                    <a href="dados_facilitados.html"><p> Dados simplificados para compreensão dos condutores.</p></a>
+                </li>
+                <li>
+                    <h2><a href="cartilha.html">Cartilha</a></h2>
+                    <br>
+                    <a href="cartilha.html"><p>Informações para aprimorar habilidades do condutor.</p></a>
+                </li>
+                <li>
+                    <h2><a href="contato.html">Contato</a></h2>
+                    <br>
+                    <a href="contato.html"><p>Contate, assine, sugira: nossa interação aguarda participação.</p></a>
+                </li>
+            </ul>
+        </nav>
+    </main>
+    <footer-component></footer-component>
+
+
+</body>
+
+</html>
