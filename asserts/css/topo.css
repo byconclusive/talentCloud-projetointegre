@@ -4,7 +4,7 @@
 }
 .menu_pagina__nav-bar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1.5rem 6rem;
 }
 

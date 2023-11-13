@@ -52,6 +52,15 @@
     font-size: 1.1rem;
 }
 
+.mani_contato__form_button_reset{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e00404;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
 .mani_contato__form_button:disabled{
     cursor: not-allowed;
     background: #fff;
