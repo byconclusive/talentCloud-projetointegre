@@ -233,7 +233,10 @@ function geraMessagemInicial(dadoMensagem){
         <h4>Número de Acidentes: <span>${dadoMensagem.acidentes}</span></h4>
         <h4>Número de Fatalidades: <span>${dadoMensagem.fatalidades}</span></h4>
         <h4>Via Mais Perigosa: <span>${dadoMensagem.via_mais_perigosa}</span></h4>
-        <h4>Principal Causa de Acidente: <span>${dadoMensagem.principal_causa}</span></h4>
+        <h4>Principal Causa de Acidente:
+            <br>
+            <span>${dadoMensagem.principal_causa}</span>
+        </h4>
     `
     return resumo
 }
@@ -248,9 +251,12 @@ function geraMessagem(dadoMensagem){
         <h4>Estado: <span>${dadoMensagem.estado}</span></h3>
         <h4>UF: <span>${dadoMensagem.uf}</span></h4>
         <h4>Número de Acidentes: <span>${dadoMensagem.acidentes}</span></h4>
-        <h4>Número de Fatalidades: <span>${dadoMensagem.fatalidades}</span></h4>
+        <h4>Número de Fatalidades:<span>${dadoMensagem.fatalidades}</span></h4>
         <h4>Via Mais Perigosa: <span>${dadoMensagem.via_mais_perigosa}</span></h4>
-        <h4>Principal Causa de Acidente: <span>${dadoMensagem.principal_causa}</span></h4>
+        <h4>Principal Causa de Acidente:
+            <br>
+            <span>${dadoMensagem.principal_causa}</span>
+        </h4>
         <img src="asserts/img/grafico_barras/bar_${dadoMensagem.estado}.svg">
     `
     return resumo
