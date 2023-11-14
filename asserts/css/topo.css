@@ -1,0 +1,107 @@
+
+
+.menu_pagina{
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+.menu_pagina__nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1.5rem 6rem;
+}
+
+.logo_menu{
+    display: flex;
+    align-items: center;   
+    
+}
+
+.logo_menu img{
+    width: 70px;
+}
+
+.menu_pagina__nav-list {
+    display: flex;
+    align-items: center;   
+
+}
+
+.menu_pagina__nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.menu_pagina__nav-item {
+    margin: 0 15px;    
+}
+
+.menu_pagina__nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.menu_pagina__login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: darkorange;
+}
+
+.menu_pagina__login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.menu_pagina__mobile-menu-icon {
+    display: none;
+}
+
+.menu_pagina__mobile-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 730px) {
+    .menu_pagina__nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .menu_pagina__nav-item {
+        display: none;
+    }
+    .menu_pagina__login-button {
+        display: none;
+    }
+    .menu_pagina__mobile-menu-icon {
+        display: block;
+    }
+    .menu_pagina__mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .menu_pagina__mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .menu_pagina__mobile-menu .menu_pagina__nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .menu_pagina__mobile-menu .menu_pagina__login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .menu_pagina__mobile-menu .menu_pagina__login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}

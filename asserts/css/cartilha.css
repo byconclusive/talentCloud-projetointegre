@@ -1,21 +1,4 @@
-*{
 
-  font-family: Arial, Helvetica, sans-serif;
-
-}
-
-.menu {
-  list-style: none;
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 3rem;
-  margin-top: 70px;
-  margin-right: 30px;
-  font-size: 20px;
-  text-align: center;
-}
 
 .me {
   display: flex;
@@ -121,36 +104,6 @@ nav a img {
   align-items: center;
 }
 
-
-
-
-footer {
-  background-color: black;
-  display: inline-flex;
-  align-items: center;
-  justify-content: space-between;
-  color: white;
-  gap: 3rem;
-}
-
-
-
-#redes-li {
-  align-items: center;
-  display: flex;
-  gap: 4rem;
-  margin-right: 20px;
-  font-size: 18px;
-}
-
-
-.copy {
-  font-weight: bolder;
-  font-size: 20px;
-  display: flex;
-  text-align: center;
-  color: white;
-}
 
 
 
