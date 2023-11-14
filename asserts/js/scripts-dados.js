@@ -283,5 +283,6 @@ function criarTooltip(uf){
 
 }
 
+
 //EVENTOS
 document.addEventListener("onload",carregarInfo())
