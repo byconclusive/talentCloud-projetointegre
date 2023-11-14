@@ -1,5 +1,4 @@
 //VARIÁVEIS
-<<<<<<< HEAD
 let dados = [{estado: 'AC',
 acidentes: 224,
 fatalidades: 18,
@@ -355,13 +354,10 @@ let dados = [
         principal_causa: "Reação tardia ou ineficiente do condutor"
     }
 ]
->>>>>>> michel1
+
 let sectionEstado = document.getElementById("resumo-estado")
 let sectionMapaInt = document.getElementById("map-inter")
 
-//FUNÇÕES
-<<<<<<< HEAD
-=======
 function geraMessagemInicial(dadoMensagem){
     const resumo = document.createElement('div')
     resumo.className = 'item-resumo'
