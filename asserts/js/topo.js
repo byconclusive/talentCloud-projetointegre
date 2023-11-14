@@ -27,7 +27,7 @@ const menu=
                 "</ul>"+
             "</div>"+
             "<div class='menu_pagina__login-button'>"+
-                "<button><a href='#'>Entrar</a></button>"+
+                
             "</div>"+
 
             "<div class='menu_pagina__mobile-menu-icon'>"+
@@ -43,9 +43,7 @@ const menu=
                 "<li class='menu_pagina__nav-item'> <a href='contato.html' class='menu_pagina__nav-link'>Contatos</a></li>"+
             "</ul>"+
 
-            "<div class='menu_pagina__login-button'>"+
-                "<button><a href='#'>Entrar</a></button>"+
-            "</div>"+
+            
         "</div>"+
     "</header>"
 topo.innerHTML+=menu

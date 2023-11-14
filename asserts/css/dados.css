@@ -1,0 +1,115 @@
+.mapas{
+    background-image: url("asserts/img/bkg.jpg");
+    background-color: transparent;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: space-between;
+    
+    padding: 1rem ;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#map-inter path {
+    fill: gainsboro;
+    stroke: black;
+    stroke-width: .25;
+}
+
+#map-inter path:hover {
+    fill: lightcyan;
+    transition: 0.6s;
+    cursor: pointer;
+}
+
+#graficos {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    
+    padding: 1rem ;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+img {
+    display: flex;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+#resumo-estado {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    padding: 1rem ;
+    border:  0.1rem solid black;
+
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}    
+
+span {
+    color: Maroon;
+}
+
+h2 {
+    text-align: center;
+
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.item-resumo {
+    display: flexbox;
+    background-color: SandyBrown;
+    
+    border-radius: 8px;
+    padding: 1rem;
+    
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+
+.tooltip {
+    display:none;
+    position:absolute;
+    top: 0;
+    left:100%;
+    right:0;
+    margin: auto;
+    width:100px;
+    height:20px;
+    border:1px solid red;
+}
+
+.btn-tooltip {
+  position:absolute;
+  margin:auto;
+  width:100px;
+  height:30px;
+  left:0;
+  right:0;
+  bottom:0;
+  top:0;
+}

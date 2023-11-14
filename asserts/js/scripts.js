@@ -49,10 +49,13 @@ form.addEventListener("submit", (event) => {
         alert("Por favor, selecione modelo do veiculo");
         return;
     }
+
+
     
     //se todos os campos estiverem corretamente preenchidos, envie o form
 
     form.submit();
+    
 });
 
 //Funçao de validar e-mail
@@ -68,6 +71,7 @@ function isEmailValid(email) {
     }
 return false;
 }
+
 
 
 

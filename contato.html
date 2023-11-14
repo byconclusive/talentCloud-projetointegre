@@ -8,10 +8,11 @@
     <script src="asserts/js/scripts.js" defer></script>
     <script src="asserts/js/rodape.js" type="text/javascript" defer></script>
     <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <title>Contatos</title>
 </head>    
 <body>
-<script src="../asserts/js/topo.js"></script> 
+<script src="asserts/js/topo.js"></script> 
 <main class="main_contato"> 
     <form id="form" class="main_contato_form" >
 
@@ -45,7 +46,8 @@
         <label class="main_contato__label" for="message">Mensagem:</label>
         <textarea class="main_contato__textarea" name="message" id="message" placeholder="Deixe sua opnião"></textarea>
       
-        <button class="mani_contato__form_button" type="submit">Enviar</button>    
+        <button class="mani_contato__form_button" type="submit" value="Send Email" onclick="myFunction() ">Enviar</button> 
+        <button class="mani_contato__form_button_reset" type="reset">Limpar</button>   
     </form>
 </main>
 <footer-component></footer-component>

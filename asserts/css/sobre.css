@@ -4,11 +4,8 @@
   margin: 0.5;
   padding: 0;
   box-sizing: border-box;
-  font-size: 17px;
 
 }
-
-
 
 .menu {
   list-style: none;
@@ -168,6 +165,7 @@ main div ul a h4 {
 .main__responsaveis-foto{
   margin: 5px;
   width: 30%;
+  border-radius: 50px;
 }
 
 @media screen and (max-width: 530px){
@@ -193,6 +191,7 @@ main div ul a h4 {
     flex-wrap: wrap;
     justify-content: center;
   }
+
 
  
 }

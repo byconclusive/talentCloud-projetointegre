@@ -1,12 +1,12 @@
-* {
+*{
 
     font-family: Arial, Helvetica, sans-serif;
-    margin: 0.5;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 17px;
-  
-  }
+
+}
+
 
 .main_contato{
     padding: 2.5rem;
@@ -48,6 +48,15 @@
     border: none;
     border-radius: 5px;
     background-color: #333;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+.mani_contato__form_button_reset{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e00404;
     color: #fff;
     font-size: 1.1rem;
 }
