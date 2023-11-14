@@ -4,49 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="asserts/css/dados.css">
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+    <link rel="shortcut icon" type="imagex/png" href="img/icone3.ico">
+    <link rel="stylesheet" href="asserts/css/dados.css">
+    <link rel="stylesheet" href="asserts/css/style.css">
     <script src="asserts/js/scripts-dados.js" defer></script>
-    <title>Dados</title>
+    <script src="asserts/js/preencherCartilhas.js"></script>
+    <script src='asserts/js/topo.js' defer></script>
+    <script src='asserts/js/rodape.js' defer></script>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <title>BraVias - Dados</title>
 </head>    
 <body>
-    <header>
-        <nav class="nav-bar">
-            <div class="logo">
-                <img src="asserts/img/logo-removebg-preview.png">
-            </div>
-            <div class="nav-list">
-                <ul>
-                    <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                    <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
-                    <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
-                    <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
-                    <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
-                </ul>
-            </div>
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
-
-            <div class="mobile-menu-icon">
-                <button onclick="menuShow()"><img class="icon" src="asserts/img/menu_white_36dp.svg" alt=""></button>
-            </div>
-        </nav>             
-        <div class="mobile-menu">
-            <ul>
-                <li class="nav-item"> <a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"> <a href="sobre_nos.html" class="nav-link">Sobre</a></li>
-                <li class="nav-item"> <a href="dados_facilitados.html" class="nav-link">Dados</a></li>
-                <li class="nav-item"> <a href="cartilha.html" class="nav-link">Cartilhas</a></li>
-                <li class="nav-item"> <a href="contato.html" class="nav-link">Contatos</a></li>
-            </ul>
-
-            <div class="login-button">
-                <button><a href="#">Entrar</a></button>
-            </div>
-        </div>
-    </header>
-
+    <script src="asserts/js/topo.js" defer></script> 
     <h2>MAPAS INTERATIVOS</h2>
     <section class="mapas" id="map-inter">    
         <svg
@@ -274,10 +245,7 @@
         <!-- INFORMAÇÕES DO JAVASCRIPT -->
     </section>
     
+    <footer-component></footer-component>
 </body>
-<div class="rodape">
-    <footer>
-        <H3>Todo o conteúdo deste site está publicado sob a licença@</H3>
-    </footer>
-</div>
+
 </html>
