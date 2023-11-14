@@ -34,8 +34,8 @@ li h2 a{
     color: #2196F3;
 }
 
-main nav li {
-    display: inline-block;
+.main__paginas li {
+   display: inline-block;
 	text-align: center;
 	width: 40%;
 	vertical-align: top;
@@ -44,6 +44,17 @@ main nav li {
 	box-sizing: border-box;
 	border: 2px solid #000000;
 	border-radius: 10px;
+}
+
+.main__cartilha__nav li {
+  display: inline-block;
+ text-align: center;
+ width: 40%;
+ vertical-align: top;
+ margin: 2% 2%;
+ padding: 30px 20px;
+ box-sizing: border-box;
+ border-radius: 10px;
 }
 
 #logo-H {
@@ -279,7 +290,7 @@ a:active{
   }
   
   main h2 {
-    font-size: 30px;
+    font-size: 25px;
   }
   
   main p {
@@ -325,6 +336,13 @@ a:active{
   
   .main__responsaveis-lista {
     padding: 8px;
+  }
+  .main__responsaveis-lista img{
+    
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+        margin-right: 0.5rem;
+        margin-left: 0.5rem;
   }
   
   .main__responsaveis-foto{
@@ -429,7 +447,7 @@ a:active{
 }
 
 
-img {
+.mapas img {
   display: flex;
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
