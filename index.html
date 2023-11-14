@@ -7,7 +7,6 @@
     <title>BraVias</title>
     <link rel="shortcut icon" type="imagex/png" href="img/icone3.ico">
     <link rel="stylesheet" href="asserts/css/style.css">
-    <link rel="stylesheet" href="asserts/css/index.css">
     <script src="asserts/js/rodape.js" type="text/javascript" defer></script>
     <script src="asserts/js/scripts.js" defer></script>
     <script src="asserts/js/rodape.js" type="text/javascript" defer></script>
@@ -19,41 +18,63 @@
     <script src="asserts/js/topo.js" defer></script> 
     <main class="main__index">
         <nav class="main__conteudo">
-            <h2 id="titulo-principal">Bem vindo ao BraVias.</h2>
-            <br>
-            <p>Aqui você encontrará informações sobre a situação das Rodovias Federais no Brasil, assim como as estatisticas
-                e dados dos acidentes ocorridos. Todos os dados disponibilizados estatisticos compartilhados no BraVia são
-                da base de dados da PRF.</p>
-            <img class="main__banner1" src="asserts/img/bannerhome1.jpg" alt="Foto de um pista" >
-
-            <p>Entre para nossa comunidade de condutores mais informados e se torne uma parte do movimento.</p>
-        </nav>
-
-
-        <nav class="main__paginas">
-            <ul>
-                <li>
-                    <h2><a href="sobre_nos.html">Sobre Nós</a></h2>
-                    <br>
-                    <a a href="sobre_nos.html"><p>Quem foram os idelializados do Bravias</p></a>
-                </li>
-                <li>
-                    <h2><a href="dados_facilitados.html">Dados Facilitados</a></h2>
-                    <br>
-                    <a href="sobre_nos.html"><p> Dados tratados e facilitados para o fácil entendimento do banco de dados.</p></a>
-                </li>
-                <li>
-                    <h2><a href="cartilha.html">Cartilha</a></h2>
-                    <br>
-                    <a href="cartilha.html"><p>Um conjunto de informações que podem te ajudar a ser um conduto melhor.</p></a>
-                </li>
-                <li>
-                    <h2><a href="contato.html">Contato</a></h2>
-                    <br>
-                    <a href="contato.html"><p>Entre em contato conosco, assine a nossa newslatter ou nos dê uma sujestão ou crítica</p></a>
-                </li>
-            </ul>
-        </nav>
+            <div style="border: 1px solid #ffffff; padding: 20px; position: relative;">
+          <h2 id="titulo-principal">Bem-vindo ao BraVias.</h2><br>
+          <p id="machine-typing">
+              O Brasil, país continental com mais de 8 milhões de quilômetros quadrados, 
+              possui uma extensa malha rodoviária de 75,8 mil quilômetros, sendo 65,4 mil 
+              pavimentados. Este site oferece informações sobre as rodovias federais, 
+              incluindo estado de conservação, acidentes, causas comuns e trechos perigosos. 
+              Os dados são da Polícia Rodoviária Federal (PRF), responsável pela segurança nas 
+              estradas federais. Acesse para conhecer as condições das estradas que conectam o Brasil.
+          </p>
+      
+      <script>
+          const text = document.getElementById('machine-typing').innerText;
+          document.getElementById('machine-typing').innerText = '';
+      
+          function typeWriter(text, i) {
+              if (i < text.length) {
+                  document.getElementById('machine-typing').innerHTML += text.charAt(i);
+                  i++;
+                  setTimeout(() => typeWriter(text, i), Math.floor(Math.random() * 100) + 50); // Adapte os valores conforme necessário
+              }
+          }
+      
+          typeWriter(text, 0);
+      </script>
+      
+      
+      </div>
+      <img class="main__banner1" src="asserts/img/pngwing.com (1).png" alt="Foto de uma pista" style="width: 100%;">
+  </div>
+  
+          </nav>
+  
+          <nav class="main__paginas">
+              <ul>
+                  <li>
+                      <h2><a href="sobre_nos.html">Sobre Nós</a></h2>
+                      <br>
+                      <a a href="sobre_nos.html"><p>Tudo sobre os idelializados da página que mais cresce no Brasil - Bravias</p></a>
+                  </li>
+                  <li>
+                      <h2><a href="dados_facilitados.html">Dados Facilitados</a></h2>
+                      <br>
+                      <a href="dados_facilitados.html"><p> Dados simplificados para compreensão dos condutores.</p></a>
+                  </li>
+                  <li>
+                      <h2><a href="cartilha.html">Cartilha</a></h2>
+                      <br>
+                      <a href="cartilha.html"><p>Informações para aprimorar habilidades do condutor.</p></a>
+                  </li>
+                  <li>
+                      <h2><a href="contato.html">Contato</a></h2>
+                      <br>
+                      <a href="contato.html"><p>Contate, assine, sugira: nossa interação aguarda participação.</p></a>
+                  </li>
+              </ul>
+          </nav>
     </main>
     <footer>
         <footer-component></footer-component>

@@ -132,7 +132,7 @@ a:active{
 }
 
 @media screen and (max-width: 530px) {
-    main{
+    .main__index{
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -147,7 +147,7 @@ a:active{
     }
 
     .main__banner1 {
-        width: 200%;
+        width: 100%;
     }
 
     .main__paginas> ul>li{
@@ -159,10 +159,16 @@ a:active{
         width: 100%;
         margin: 10px;
     }
+    .main__paginas h2{
+      font-size: 20px;
+    }
+    .main__conteudo p{
+      font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 531px) and (max-width: 980px) {
-    main{
+    .main__index{
         flex-wrap: grid;
         align-items: flex;
         gap: 0.5rem;
@@ -191,6 +197,9 @@ a:active{
         flex-wrap: wrap;
         width: auto;
         margin: 10px
+    }
+    .main__paginas h2{
+      font-size: 20px;
     }
 }
 
@@ -347,7 +356,9 @@ a:active{
       flex-wrap: wrap;
       justify-content: center;
     }
-  
+    .main__responsaveis-lista p{
+      font-size: 16px;
+    }
   
    
   }
